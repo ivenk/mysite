@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import NavBar from "./NavigationBarComponent/NavBar";
+import ContentFrame from "./ContentComponent/ContentFrame"
 
 function App() {
   return (
@@ -10,9 +11,10 @@ function App() {
                 <h1 className="name-header-main">Iven Köthke</h1>
                 <h2 className="name-header-second">Blue</h2>
             </div>
-            <div className="vl"/>
             <NavBar/>
+            <ContentFrame mode="main"/>
         </div>
+        <div className="vl"/>
     </div>
   );
 }
