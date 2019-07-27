@@ -23,57 +23,32 @@
     font-family: 'Source Code Pro', monospace;
 }
 
-.blinking-cursor {
-    font-weight: 100;
-    display: inline-block;
-    -webkit-animation: 1s blink step-end infinite;
-    -moz-animation: 1s blink step-end infinite;
-    -ms-animation: 1s blink step-end infinite;
-    -o-animation: 1s blink step-end infinite;
-    animation: 1s blink step-end infinite;
+.var-highlight{
+    color: #C0AD60;
+}
+.string-highlight{
+    color: rgba(253, 149, 90, 0.8);
 }
 
-@keyframes blink {
-    from, to {
-        color: transparent;
-    }
-    50% {
-        color: white;
-    }
+.front-header-line::after{
+    content: "|";
+    animation: blink2 500ms linear infinite alternate;
+    font-size: 3em;
+    color: white;
+    font-family: 'Source Code Pro', monospace;
 }
 
-@-moz-keyframes blink {
-    from, to {
-        color: transparent;
-    }
-    50% {
-        color: white;
-    }
+@-webkit-keyframes blink2{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
 }
 
-@-webkit-keyframes blink {
-    from, to {
-        color: transparent;
-    }
-    50% {
-        color: white;
-    }
+@-moz-keyframes blink2{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
 }
 
-@-ms-keyframes blink {
-    from, to {
-        color: transparent;
-    }
-    50% {
-        color: white;
-    }
-}
-
-@-o-keyframes blink {
-    from, to {
-        color: transparent;
-    }
-    50% {
-        color: white;
-    }
+@keyframes blink2{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
 }
