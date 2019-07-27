@@ -23,6 +23,8 @@
     font-family: 'Source Code Pro', monospace;
 }
 
+/* The following is taken from https://css-tricks.com/snippets/css/typewriter-effect/ */
+
 .var-highlight{
     color: #C0AD60;
 }
