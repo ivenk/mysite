@@ -1,11 +1,14 @@
 import React from 'react';
+import './NavBar.css';
 
 class NavBar extends React.Component {
     render() {
         return (
             <div className="nav-bar">
-                {this.renderButton("Home")}
-                {this.renderButton("Contact")}
+                <ul className="nav-bar-list">
+                    <li>{this.renderButton("Home")}</li>
+                    <li>{this.renderButton("Contact")}</li>
+                </ul>
             </div>
         );
     }
