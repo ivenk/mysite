@@ -12,9 +12,9 @@ function App() {
                 <h2 className="name-header-second">Blue</h2>
             </div>
             <NavBar/>
-            <ContentFrame mode="main"/>
         </div>
         <div className="vl"/>
+        <ContentFrame mode="main"/>
     </div>
   );
 }
