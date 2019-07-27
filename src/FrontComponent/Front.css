@@ -20,6 +20,7 @@
 .front-header-main {
     font-size: 3em;
     color: white;
+    font-family: 'Source Code Pro', monospace;
 }
 
 .blinking-cursor {
