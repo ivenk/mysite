@@ -18,3 +18,5 @@ class ContentFrame extends React.Component {
         );
     }
 }
+
+export default ContentFrame;
