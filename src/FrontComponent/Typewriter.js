@@ -50,7 +50,4 @@ export default class Typewriter extends React.Component {
             </div>
         )
     }
-
-
-
 }
