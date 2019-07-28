@@ -2,3 +2,7 @@
     list-style: none;
     align-items: normal;
 }
+
+.nav-bar-button-active {
+    background: aqua;
+}
