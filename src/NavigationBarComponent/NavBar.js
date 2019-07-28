@@ -12,10 +12,9 @@ class NavBar extends React.Component {
     render() {
         return (
             <div className="nav-bar">
-                <ul className="nav-bar-list">
-                    <li id="home-button" className="nav-bar-list-button">{this.renderButton("Home", (this.state.clicked === "Home"))}</li>
-                    <li id="contact-button" className="nav-bar-list-button">{this.renderButton("Contact", (this.state.clicked === "Contact"))}</li>
-                </ul>
+                <div className="nav-bar-button">{this.renderButton("Home", (this.state.clicked === "Home"))}</div>
+                <div className="nav-bar-button">{this.renderButton("Skills", (this.state.clicked === "Skills"))}</div>
+                <div className="nav-bar-button">{this.renderButton("Contact", (this.state.clicked === "Contact"))}</div>
             </div>
         );
     }
