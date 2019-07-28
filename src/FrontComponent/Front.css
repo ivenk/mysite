@@ -21,36 +21,13 @@
     font-size: 3em;
     color: white;
     font-family: 'Source Code Pro', monospace;
+    margin-bottom: 20vh;
 }
+.material-icons.md-96 { font-size: 120px; }
 
-/* The following is taken from https://css-tricks.com/snippets/css/typewriter-effect/ */
-
-.var-highlight{
-    color: #C0AD60;
-}
-.string-highlight{
-    color: rgba(253, 149, 90, 0.8);
-}
-
-.front-header-line::after{
-    content: "|";
-    animation: blink2 500ms linear infinite alternate;
-    font-size: 3em;
-    color: white;
-    font-family: 'Source Code Pro', monospace;
-}
-
-@-webkit-keyframes blink2{
-    0%{opacity: 0;}
-    100%{opacity: 1;}
-}
-
-@-moz-keyframes blink2{
-    0%{opacity: 0;}
-    100%{opacity: 1;}
-}
-
-@keyframes blink2{
-    0%{opacity: 0;}
-    100%{opacity: 1;}
+.absolute_center_bottom {
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 10px;
 }
