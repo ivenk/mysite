@@ -1,0 +1,34 @@
+/* The following is taken from https://css-tricks.com/snippets/css/typewriter-effect/ */
+.var-highlight{
+    color: #C0AD60;
+}
+.string-highlight{
+    color: rgba(253, 149, 90, 0.8);
+}
+
+.type-writer::after{
+    content: "|";
+    animation: blink 500ms linear infinite alternate;
+    font-size: 1em;
+    color: white;
+    font-family: 'Source Code Pro', monospace;
+}
+
+.type-writer-typed {
+    color: #0583eb;
+}
+
+@-webkit-keyframes blink{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+@-moz-keyframes blink{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+@keyframes blink{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
