@@ -1,10 +1,11 @@
 import React from 'react'
 import './FeedbackButton.css'
 
-class FeedbackButton extends React.Component {
+export default class FeedbackButton extends React.Component {
     render() {
         return (
-                <button className="feedback-button">
+                <button className="feedback-button absolute_left_top">
+                    <i className="material-icons md-24 inline-img">feedback</i>
                     Feedback
                 </button>
         );
