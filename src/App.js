@@ -1,6 +1,5 @@
 import React from 'react';
 import './App.css';
-import NavBar from "./NavigationBarComponent/NavBar";
 import ContentFrame from "./ContentComponent/ContentFrame"
 import Front from "./FrontComponent/Front"
 
