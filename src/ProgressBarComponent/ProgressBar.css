@@ -1,13 +1,14 @@
 /* Styling borrowed from https://css-tricks.com/css3-progress-bars/ */
 
-.progress-bar {
+.progress-bar-bar {
     height: 20px;  /* Can be anything */
+    width: 15vw;
     position: relative;
     background: #555;
     -moz-border-radius: 25px;
     -webkit-border-radius: 25px;
     border-radius: 25px;
-    padding: 10px;
+    padding: 5px;
     box-shadow: inset 0 -1px 1px rgba(255,255,255,0.3);
 }
 

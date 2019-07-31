@@ -1,9 +1,13 @@
 import React from 'react'
+import './ProgressBar.css'
 
-function ProgressBar(props) {
+export default function ProgressBar(props) {
     return (
       <div className="progress-bar">
-          <span className="progress-bar-inner" style={"width: " + props.width + "%"}/>
+          {props.label + ": " + props.fill}
+          <div className="progress-bar-bar">
+              <span className="progress-bar-inner" style={{"width" : props.fill}} />
+          </div>
       </div>
     );
 }
