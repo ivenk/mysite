@@ -3,6 +3,7 @@ import './Front.css'
 import Typewriter from "./Typewriter";
 import NavBar from "../NavigationBarComponent/NavBar";
 import FeedbackButton from '../FeedbackComponent/FeedbackButton'
+import SiteManager from "../SiteManagerComponent/SiteManager";
 
 function Front(props) {
     return (
@@ -11,7 +12,7 @@ function Front(props) {
             <NavBar />
             <Typewriter text="IVEN KÖTHKE" speed="150" static="I AM " typingDelay="2000"/>
             {/*<h1 className="front-header-background">blue</h1> */}
-            <i className="material-icons md-96 absolute_center_bottom">expand_more</i>
+            <i className="material-icons md-96 absolute_center_bottom" onClick={SiteManager.scrollDown}>expand_more</i>
         </div>
     );
 }
