@@ -12,19 +12,19 @@ class NavBar extends React.Component {
     render() {
         return (
             <div className="nav-bar">
-                <div className="nav-bar-button">{this.renderButton("Home", (this.state.clicked === "Home"))}</div>
-                <div className="nav-bar-button">{this.renderButton("Skills", (this.state.clicked === "Skills"))}</div>
-                <div className="nav-bar-button">{this.renderButton("Contact", (this.state.clicked === "Contact"))}</div>
+                <div className="nav-bar-button">{this.renderButton("Home")}</div>
+                <div className="nav-bar-button">{this.renderButton("Skills")}</div>
+                <div className="nav-bar-button">{this.renderButton("Contact")}</div>
             </div>
         );
     }
 
-    renderButton(name, isClicked) {
+    renderButton(name) {
         return(
             <NavBarButton
                 name={name}
                 onClick={() => this.handleClick(name)}
-                isClicked = {isClicked}
+                isClicked = {(this.state.clicked == name)}
             />
         );
     }
@@ -43,7 +43,7 @@ function NavBarButton(props) {
     }
 
     return (
-    <button className={classes}  onClick={props.onClick}>
+        <button className={classes}  onClick={props.onClick}>
             {props.name}
         </button>
     );
